@@ -14,7 +14,7 @@
 
 [ ] Comenzar a entender los conceptos fundamentales relacionados con la virtualización.
 
-[ ] Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso.
+[x] Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso.
 
 [ ] Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los sistemas operativos. Saber si el ordenador habitual lo usa.
 
@@ -26,7 +26,7 @@
 
 ####Otros objetivos
 
-[ ] Entender el sistema de prácticas, a base de las entregas de hitos de un proyecto, su puntuación y qué es lo que se exige.
+[x] Entender el sistema de prácticas, a base de las entregas de hitos de un proyecto, su puntuación y qué es lo que se exige.
 
 [x] Tener a punto la instalación de git usando pares clave pública/privada para interaccionar con GitHub (no https).
 
@@ -44,6 +44,6 @@
 
 [x] Usar git para hacer check-in en clase y expresar al final de cada sesión los objetivos alcanzados.
 
-[ ] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+[x] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 
-[ ] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+[x] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.

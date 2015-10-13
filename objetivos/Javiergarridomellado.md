@@ -25,7 +25,7 @@
 
 ### Otros objetivos
 
-- [ ] Entender el sistema de prácticas, a base de las entregas de hitos de un proyecto, su puntuación y qué es lo que se exige.
+- [X] Entender el sistema de prácticas, a base de las entregas de hitos de un proyecto, su puntuación y qué es lo que se exige.
 - [X] Tener a punto la instalación de git usando pares clave pública/privada para interaccionar con GitHub (no https).
 - [X] Tener configurdos los dos repositorios (origin, el propio, upstream, el del resto de la clase).
 - [X] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura. Si necesitas ayuda para instalarlo, los jueves a partir de las 12:30 está la OSL en la sala de reuniones.
@@ -36,3 +36,11 @@
 - [X] Usar git para hacer check-in en clase y expresar al final de cada sesión los objetivos alcanzados.
 - [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 - [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+
+## Sesion 3 (Clase del 07 de Octubre de 2015)
+
+- [ ] Conocer los conceptos relacionados con el proceso de virtualización tanto de software como de hardware y ponerlos en práctica.
+- [ ] Entender el concepto de DevOps
+- [ ] Usar herramientas para gestión de los ciclos de desarrollo de una aplicación y entender cuales son estos.
+- [ ] Aprender a usar integración continua en cualquier aplicación.
+
