@@ -296,6 +296,14 @@
 
 - [X] Usar diferentes infraestructuras en la nube.
 
+##Seminarios y otros
+
+- [X] Visita a Trevenque
+- [X] Boots de Telegram
+- [X] Charla sobre Microsoft Azure
+- [X] Hackaton sobre el Proyecto Final
+- [X] Asistencia continuada a clase teórica y practica 
+- [X] Participación activa en grupo IV Telegram
 
 
 
