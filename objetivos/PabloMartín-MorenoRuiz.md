@@ -80,3 +80,41 @@
 - [x] Adoptar buenas prácticas en los repositorios git: 
 - [x] Interiorizar el sistema de desarrollo basado en tests, TDD o BDD, creando tests a la vez que se va añadiendo nueva funcionalidad a las aplicaciones.
  
+## Objetivos decima semana
+- [x] Usar docker en una aplicación real. 
+
+### Otros objetivos de la semana decima
+- [x] Publicar imágenes de docker. 
+- [x] Probar imágenes de docker publicadas.
+- [ ] Trabajar con varias imágenes de docker cokectadas.
+
+
+## Objetivos onceava semana
+- [x] Comprender el concepto de hipervisor y los diferentes tipos que hay.
+
+### Otros objetivos de la semana onceava
+- [x] Instalar hipervisores libres y trabajar con ellos.
+- [x] Probar diferentes tipos de máquinas virttuales con sistemas operativos libres.
+
+## Objetivos doceava semana
+- [x] Usar gestores de máquinas virtuales.
+
+### Otros objetivos de la semana doceava
+- [x] Instalar clientes libres de infraestructura en la nube.
+- [x] Probar diferentes tipos de máquinas virtuales con sistemas operativos libres.
+- [x] Asimilar el concepto de herramienta de despliegue y probar alguna como Capistrano o Fabric. 
+
+## Objetivos treceava semana
+- [x] Usar infraestructura en la nube
+- [x] Entender el concepto de orquestación de máquinas virtuales.
+
+### Otros objetivos de la semana treceava
+- [x] Instalar clientes libres de infraestructura en la nube.
+- [x] Probar diferentes tipos de máquinas virttuales con sistemas operativos libres.
+- [x] Trabajar y solucionar problemas con la infraestructura en la nube.
+
+## Objetivos catorceava semana
+- [x] Probar diferentes formas de desplegar en la nube.
+- [x] Depurar los scripts y añadirles funcionalidades para que sean servicios completos.
+
+

@@ -177,3 +177,27 @@ Optimizar aplicaciones sobre plataformas virtuales.
 - [X] Publicar imágenes de docker.
 - [X] Probar imágenes de docker publicadas.
 - [X] Trabajar con varias imágenes de docker conectadas.
+
+###Objetivos Tema 5
+- [X] Conocer las diferentes tecnologías y herramientas de virtualización tanto para procesamiento, comunicación y almacenamiento.
+- [X] Diseñar, construir y analizar las prestaciones de un centro de proceso de datos virtual.
+- [X] Documentar y mantener una plataforma virtual.
+- [X] Realizar tareas de administración de infraestructuras virtuales.
+
+##Objetivos de la Sesión 11
+- [X] Comprender el concepto de hipervisor y los diferentes tipos que hay.
+- [X] Instalar hipervisores libres y trabajar con ellos.
+- [X] Probar diferentes tipos de máquinas virttuales con sistemas operativos libres.
+
+##Objetivos de la Sesión 12
+- [X] Instalar clientes libres de infraestructura en la nube.
+- [X] Probar diferentes tipos de máquinas virtuales con sistemas operativos libres.
+- [X] Asimilar el concepto de herramienta de despliegue y probar alguna como Capistrano o Fabric.
+
+##Objetivos de la Sesión 13 y 14
+- [X] Usar infraestructura en la nube
+
+####Objetivos Especificos del tema 6
+- [X] Aprender lenguajes de configuración usados en infraestructuras virtuales.
+- [X] Saber cómo aplicarlos en un caso determinado.
+- [X] Conocer los sistemas de gestión de la configuración, provisionamiento y monitorizació más usados hoy en día.

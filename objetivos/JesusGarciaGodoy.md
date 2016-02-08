@@ -146,6 +146,31 @@ ordenador habitual lo usa.
 
 ### Otros objetivos undécima sesión
 
-  - [ ] Instalar clientes libres de infraestructura en la nube.
+  - [x] Instalar clientes libres de infraestructura en la nube.
   - [x] Probar diferentes tipos de máquinas virtuales con sistemas operativos libres.
-  - [ ] similar el concepto de herramienta de despliegue y probar alguna como Capistrano o Fabric.
+  - [x] similar el concepto de herramienta de despliegue y probar alguna como Capistrano o Fabric.
+
+
+### Objetivos treceava sesión 
+
+  - [x] Usar infraestructura en la nube
+  - [x] Entender el concepto de orquestación de máquinas virtuale
+
+### Otros objetivos treceava sesión
+
+  - [x] Instalar clientes libres de infraestructura en la nube.
+  - [x] Probar diferentes tipos de máquinas virttuales con sistemas operativos libres.
+  - [x] Trabajar y solucionar problemas con la infraestructura en la nube.
+
+
+
+### Objetivos catorceava sesión 
+
+  - [x] Usar infraestructura en la nube
+  - [x] Entender el concepto de orquestación de máquinas virtuale
+
+### Otros objetivos catorceava sesión
+
+  - [x] Instalar clientes libres de infraestructura en la nube.
+  - [x] Probar diferentes tipos de máquinas virttuales con sistemas operativos libres.
+  - [x] Trabajar y solucionar problemas con la infraestructura en la nube.

@@ -58,4 +58,55 @@
 
 #Séptima semana, comienza el 11 de Noviembre
 ##Objetivos de la semana
-- [ ] Entender la base del aislamiento de recursos en el sistema operativo.
+- [x] Entender la base del aislamiento de recursos en el sistema operativo.
+- [x] Instalar docker y trabajar con él.
+
+***
+
+#Octava semana, comienza el 18 de Noviembre
+##Objetivos de la semana
+- [x] Entender la base del aislamiento de recursos en el sistema operativo.
+- [x] Entender las diferentes formas de aislar recursos en Linux u otros sistemas operativos
+
+***
+
+#Novena semana, comienza el 25 de Noviembre
+##Objetivos de la semana
+- [x] Uso de docker para creación de imágenes.
+- [x] Entender el uso de docker en el contexto de una aplicación.
+- [x] Analizar el resultado del último hito de las prácticas.
+
+***
+
+#Décima semana, comienza el 2 de Diciembre
+##Objetivos de la semana
+- [x] Usar docker en una aplicación real. 
+- [x] Probar imágenes de docker publicadas.
+
+***
+
+#Undécima semana, comienza el 9 de Diciembre
+##Objetivos de la semana
+- [x] Comprender el concepto de hipervisor y los diferentes tipos que hay.
+- [x] Probar diferentes tipos de máquinas virtuales con sistemas operativos libres.
+
+***
+
+#Duodécima semana, comienza el 16 de Diciembre
+##Objetivos de la semana
+- [x] Usar gestores de máquinas virtuales.
+- [x] Probar diferentes tipos de máquinas virtuales con sistemas operativos libres.
+
+***
+
+#Décimo tercera semana, comienza el 13 de enero
+##Objetivos de la semana
+- [x] Usar infraestructura en la nube
+- [x] Entender el concepto de orquestación de máquinas virtuales.
+
+***
+
+#Décimo cuarta semana, comienza el 20 de enero
+##Objetivos de la semana
+- [x] Probar diferentes formas de desplegar en la nube.
+- [x] Depurar los scripts y añadirles funcionalidades para que sean servicios completos.
