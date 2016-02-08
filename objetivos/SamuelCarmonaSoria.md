@@ -104,8 +104,54 @@ ordenador habitual lo usa.
 [x] Usar imágenes de docker publicadas.
 
 
+### Objetivos principales
+
+- [x] Usar docker en una aplicación real.
+
+### Otros objetivos
+
+- [x] Publicar imágenes de docker.
+- [x] Probar imágenes de docker publicadas.
+- [ ] Trabajar con varias imágenes de docker cokectadas.
+
+## Objetivos de la novena semana
+
+### Objetivos principales
+
+- [x] Uso de docker para creación de imágenes.
+- [x] Entender el uso de docker en el contexto de una aplicación.
+- [x] Analizar el resultado del último hito de las prácticas.
+
+### Otros objetivos
+
+- [ ] Revisar los errores en la entrega de tercer hito.
+- [x] Adoptar buenas prácticas en los repositorios git:
+	- [x] Usar .gitignore para no añadir accidentalmente ficheros generados o innecesairos. Borrar los existentes.
+	- [x] Usar prácticas habituales en el layout del proyecto: usar nombres de directorio estándar y los ficheros necesarios para despliegue en el directorio principal.
+- [x] Interiorizar el sistema de desarrollo basado en tests, TDD o BDD, creando tests a la vez que se va añadiendo nueva funcionalidad a las aplicaciones.
+- [x] Asistir al taller de Telegram
+- [ ] Asistir al seminario de PaaS (aula 1.6, 18:30, miércoles 23).
+
+
+### Objetivos de la Sesión 11
+
+- [x] Comprender el concepto de hipervisor y los diferentes tipos que hay
+- [x] Instalar hipervisores libres y trabajar con ellos.
+- [x] Probar diferentes tipos de máquinas virttuales con sistemas operativos libres.
+
+### Objetivos de la Sesión 12
+
+- [x] Instalar clientes libres de infraestructura en la nube.
+- [x] Probar diferentes tipos de máquinas virtuales con sistemas operativos libres.
+- [x] Asimilar el concepto de herramienta de despliegue y probar alguna como Capistrano o Fabric.
+
+### Objetivos de la Sesión 13 y 14
+
+- [x] Usar infraestructura en la nube
+
 
 ##Tema 4
+
 - [x] Conocer las diferentes tecnologías y herramientas de virtualización tanto para procesamiento, comunicación y almacenamiento
 - [x] Instalar, configurar, evaluar y optimizar las prestaciones de un servidor virtual.
 - [x] Configurar los diferentes dispositivos físicos para acceso a los servidores virtuales: acceso de usuarios, redes de comunicaciones o entrada/salida.
