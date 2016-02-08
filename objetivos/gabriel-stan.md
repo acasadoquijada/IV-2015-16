@@ -1,6 +1,13 @@
 Lista de objetivos de Gabriel Stan
 ==================================
 
+#Otros Objetivos
+
+- [x] Participar al hackaton
+- [x] Visita a Trevenque
+- [x] Participar al taller de Bots de Telegram
+- [x] Participar al taller de Git
+
 
 # Objetivos Tema 6:
 
