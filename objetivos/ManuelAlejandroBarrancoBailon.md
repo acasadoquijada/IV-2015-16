@@ -208,3 +208,12 @@
 - [X] Aprender lenguajes de configuración usados en infraestructuras virtuales.
 - [X] Saber cómo aplicarlos en un caso determinado.
 - [X] Conocer los sistemas de gestión de la configuración, provisionamiento y monitorización más usados hoy en día.
+
+##Seminarios y participación
+- [X] Visita a Trevenque
+- [X] Bots de Telegram
+- [ ] Charla sobre Microsoft
+- [X] Charlas Ansible y Vagrant
+- [X] Hackaton sobre el Proyecto Final
+- [X] Asistencia continuada a clase teórica y práctica 
+- [X] Participación activa en grupo IV de Telegram
