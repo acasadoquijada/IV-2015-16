@@ -118,3 +118,19 @@ Lista de objetivos de Mariano Palomo Villafranca
 - [X] Usar diferentes infraestructuras en la nube.
 
 - [X] Resolver dudas con respecto a la práctica final.
+
+## Seminarios y participación
+
+- [X] Visita a Trevenque
+
+- [X] Bots de Telegram
+
+- [ ] Charla sobre Microsoft
+
+- [ ] Charlas Ansible y Vagrant
+
+- [ ] Hackaton sobre el Proyecto Final
+
+- [X] Asistencia continuada a clase teórica y práctica 
+
+- [ ] Participación activa en grupo IV de Telegram
