@@ -91,8 +91,7 @@ Alberto Romero Cañadas - [Lista libros](https://github.com/sn1k/submodulo-alber
 
 Javier Ruiz César - [Votaciones](https://github.com/javiexfiliana7/submodulo-javi) 13:30
 
-Jesús García Godoy -
-[Workinout](https://github.com/jesmorc/Workinout.git) 13.45
+Jesús García Godoy - [Workinout](https://github.com/jesmorc/Workinout.git) 13.45
 
 ## Lista de comprobación del proyecto
 
