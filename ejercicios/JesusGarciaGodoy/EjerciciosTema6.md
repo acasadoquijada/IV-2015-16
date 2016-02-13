@@ -145,4 +145,130 @@ sudo chef-solo -c chef/solo.rb
           - 11
 ```
 
+## Ejercicio 4
+**Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.**
 
+Para empezar, primero instalamos Ansible:
+```
+sudo pip install paramiko PyYAML jinja2 httplib2 ansible
+```
+
+Añado la máquina la máquina de Azure al "inventario" :
+```
+echo "iv-jesmorc-ubuntuserver.cloudapp.net" >> ~/ansible_hosts
+```
+
+Configuramos la variable de entorno:
+```
+export ANSIBLE_HOSTS=~/ansible_hosts
+```
+
+Arrancamos la máquina virtual:
+```
+azure vm start iv-jesmorc-ubuntuserver
+```
+
+
+Ahora debemos configurar SSH para poder conectar con la máquina:
+```
+ssh-keygen -t dsa
+
+ssh-copy-id -i .ssh/id_dsa.pub jesmorc@iv-jesmorc-ubuntuserver.cloudapp.net
+```
+
+Ahora comprobaremos que tenemos acceso tanto por SSH como desde Ansible:
+
+```
+jesmorc@jesmorc-PClaptop ~/Workinout $ ssh jesmorc@iv-jesmorc-ubuntuserver.cloudapp.net
+jesmorc@iv-jesmorc-ubuntuserver.cloudapp.net's password: 
+Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.16.0-37-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Sat Feb 13 18:25:20 UTC 2016
+
+  System load:  0.24              Processes:           230
+  Usage of /:   4.3% of 28.80GB   Users logged in:     0
+  Memory usage: 10%               IP address for eth0: 100.77.224.46
+  Swap usage:   0%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+
+*** System restart required ***
+Last login: Sat Feb 13 18:25:21 2016 from 217.216.81.186.dyn.user.ono.com
+jesmorc@iv-jesmorc-ubuntuserver:~$
+```
+
+A continuación conectamos con Ansible:
+```
+jesmorc@jesmorc-PClaptop $ ansible all -u jesmorc -m ping
+Enter passphrase for key'/home/jesmorc/.ssh/id_dsa':
+iv-jesmorc-ubuntuserver.cloudapp.net | SUCCESS => {
+	"changed": false,
+	"ping": "pong"
+}
+```
+)
+
+Podemos ejecutar comandos desde nuestra máquina local:
+)
+```
+jesmorc@jesmorc-PClaptop $ ansible all -u jesmorc -m ping
+iv-jesmorc-ubuntuserver.cloudapp.net | SUCCESS => | rc=0 >> olakase 
+```
+
+Para el despliegue de la aplicación, primero instalamos los librerías básicos en la máquina:
+```
+ansible all -u jesmorc -a "sudo apt-get install -y python-setuptools python-dev build-essential git pkg-config libjpeg-dev zlib1g-dev"
+ansible all -u jesmorc -m command -a "sudo easy_install pip"
+```
+
+Clonamos el repositorio en la máquina de Azure:
+
+```
+ansible all -u jesmorc -m git -a "repo=https://github.com/jesmorc/Workinout.git  dest=~/Workinout version=HEAD"
+```
+
+Instalamos lo necesario para ejecutar la aplicación:
+```
+ansible all -u jesmorc -m command -a "pip install -r Workinout/requirements.txt"
+```
+
+En local: 
+```
+azure vm endpoint create iv-jesmorc-ubuntuserver 80 80
+```
+
+Desactivamos el servidor web nginx en la máquina azure para que no ocupe el puerto 80:
+```
+ ansible all -u jesmorc -m command -a "sudo update-rc.d nginx disable;"
+```
+
+Hay 2 maneras de ejecutar la aplicación:
+
+Primera: nos movemos al directorio de la aplicación, y luego ejecutaremos la app:
+```
+ansible all -m shell -a "cd ~/Workinout && sudo python manage.py runserver 0.0.0.0:80"
+```
+
+Segunda: con un script
+
+*script.sh*
+```
+cd ~/Workinout/
+sudo python manage.py runserver 0.0.0.0:80
+```
+
+Ahora, desde la máquina local podemos ejecutar la siguiente línea, y pondrá en funcionamiento nuestra apliación:
+```
+ansible all -u jesmorc -m command -a "sh ~/Workinout/script.sh"
+```
+
+*NOTA: necesario moverse al directorio de la apliación*
+
+Ahora si entramos a *http://iv-jesmorc-ubuntuserver.cloudapp.net* veremos la aplicación corriendo.
