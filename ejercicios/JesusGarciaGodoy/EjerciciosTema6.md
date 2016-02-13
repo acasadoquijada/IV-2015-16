@@ -368,3 +368,30 @@ Chef requiere configurarse desde dentro del servidor, creación de directorios, 
 Ansible, en cambio, se puede configurar desde fuera del servidor.
 
 Los playbooks son más fáciles de de configurar en Ansible que las recetas de Chef, aunque éste es un poco más ligero que Ansible.
+
+## Ejercicio 7
+**Crear un script para provisionar "nginx" o cualquier otro servidor web que pueda ser útil para alguna otra práctica.**
+
+Creamos el fichero Vagrantfile :
+
+```
+#-*- mode: ruby -*-
+#vi: set ft=ruby :
+
+#Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "debian"
+
+  config.vm.provision "shell",
+	inline: "sudo apt-get update && sudo apt-get install -y nginx && sudo service nginx start"
+
+end
+```
+
+Ejecuantado el siguiente comando se recargará el Vagrantfile:
+```vagrant provision```
+
+
+
