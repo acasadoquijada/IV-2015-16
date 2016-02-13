@@ -51,3 +51,79 @@ vagrant@iv-jesmorc-ubuntuserver:~$ chef-solo -v
 Chef: 12.7.2
 ```
 
+## Ejercicio 2
+**Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual.**
+
+Creamos los directorios donde irán las recetas para instalar nginx y el editor nano:
+
+Desde el *home* :
+
+```
+vagrant@iv-jesmorc-ubuntuserver:~$ mkdir -p chef/cookbooks/nginx/recipes
+vagrant@iv-jesmorc-ubuntuserver:~$ mkdir -p chef/cookbooks/nano/recipes
+
+```
+
+Ahora, vamos a configurar los ficheros que contendrán las recetas para instalar "nginx" y "nano".
+
+[Tutorial Server chef-solo](http://www.mechanicalfish.net/configure-a-server-with-chef-solo-in-five-minutes/).
+
+El fichero que contendrá la receta de instalación se llamará *default.rb*, que existirá uno en cada uno de los directorios creados antes.
+Esto contiene ordenes que  instalarán el paquete especificado, creará un directorio para documentos y dentro de él un fichero que explica de qué se trata.
+
+- Receta **default.rb** para nginx:
+
+```
+package 'nginx'
+directory "/home/jesmorc/Documentos/nginx"
+file "/home/jesmorc/Documentos/nginx/LEEME" do
+	owner "jesmorc"
+	group "jesmorc"
+	mode 00544
+	action :create
+	content "Directorio para nginx"
+end
+```
+
+- Receta **default.rb** para nano:
+
+```
+package 'nano'
+directory "/home/jesmorc/Documentos/nano"
+file "/home/jesmorc/Documentos/nano/LEEME" do
+	owner "jesmorc"
+	group "jesmorc"
+	mode 00544
+	action :create
+	content "Directorio para nano"
+end
+```
+
+
+Creamos directorios necesarios:
+```
+  mkdir -p Documentos/nano
+  mkdir -p Documentos/nginx
+```
+
+El siguiente paso es crear un fichero llamado **node.json**, que irá en el directorio *chef* y va a tener la lista de recetas a ejecutar. Contiene:
+
+```
+{
+        "run_list":["recipe[nginx]", "recipe[nano]"]
+}
+```
+
+Creamos el archivo de configuración **solo.rb**, también en el directorio *chef*, que incluye referencias a los ficheros previos.
+
+```
+file_cache_path "/home/jesmorc/chef"
+cookbook_path "/home/jesmorc/chef/cookbooks"
+json_attribs "/home/jesmorc/chef/node.json"
+```
+
+Comprobamos que los paquetes  "nano" y "nginx" se instalan con la siguiente orden:
+```
+sudo chef-solo -c chef/solo.rb
+```
+
