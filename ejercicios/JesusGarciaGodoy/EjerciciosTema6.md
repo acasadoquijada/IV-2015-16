@@ -272,3 +272,92 @@ ansible all -u jesmorc -m command -a "sh ~/Workinout/script.sh"
 *NOTA: necesario moverse al directorio de la apliación*
 
 Ahora si entramos a *http://iv-jesmorc-ubuntuserver.cloudapp.net* veremos la aplicación corriendo.
+
+## Ejercicio 5.1
+**Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.**
+
+Primero he editado el archivo ansible_hosts:
+```
+[iv-jesmorc-ubuntuserver]
+iv-jesmorc-ubuntuserver.cloudapp.net
+```
+
+Editamos también el archivo */etc/ansible/hosts* con el mismo contenido que el archivo **ansible_hosts**.
+
+Creamos el archivo **playbook.yml**:
+```
+---
+- hosts: iv-jesmorc-ubuntuserver
+  sudo: yes
+  remote_user: jesmorc
+  tasks:
+  - name: Instalar paquetes necesarios
+    apt: name=python-setuptools state=present
+    apt: name=python-dev state=present
+    apt: name=build-essential state=present
+    apt: name=git state=present
+    apt: name=libtiff4-dev state=present
+    apt: name=libjpeg8-dev state=present
+    apt: name=zlib1g-dev state=present
+    apt: name=libfreetype6-dev state=present
+    apt: name=liblcms1-dev state=present
+    apt: name=libwebp-dev state=present
+  - name: Clonando repositorio desde git
+    git: repo=https://github.com/jesmorc/Workinout.git dest=Workinout version=HEAD force=yes
+  - name: Instalar requisitos para la app
+    shell: cd Workinout && make install
+  - name: Ejecutar aplicacion
+    shell: cd Workinout && make run
+```
+
+Y ejecutamos el playbook con:
+
+```
+jesmorc@jesmorc-PCLaptop:~$ ansible-playbook -u jesmorc playbook.yml
+ __________________
+< PLAY [localhost] >
+ ------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+ _________________
+< GATHERING FACTS >
+ -----------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+ ____________________________________
+< TASK: Instalar paquetes necesarios >
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+previous known host file not found
+previous known host file not found
+ok: [localhost] => {"changed": false}
+ ______________________________________
+< TASK: Clonando repositorio desde git >
+ --------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+[...]
+```
+
+
