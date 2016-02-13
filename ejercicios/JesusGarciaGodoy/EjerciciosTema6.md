@@ -361,3 +361,10 @@ ok: [localhost] => {"changed": false}
 ```
 
 
+## Ejercicio 5.2
+**¿Ansible o Chef? ¿O cualquier otro que no hemos usado aquí? **
+
+Chef requiere configurarse desde dentro del servidor, creación de directorios, ficheros, etc...
+Ansible, en cambio, se puede configurar desde fuera del servidor.
+
+Los playbooks son más fáciles de de configurar en Ansible que las recetas de Chef, aunque éste es un poco más ligero que Ansible.
