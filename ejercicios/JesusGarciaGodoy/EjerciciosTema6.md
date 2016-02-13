@@ -393,5 +393,66 @@ end
 Ejecuantado el siguiente comando se recargará el Vagrantfile:
 ```vagrant provision```
 
+## Ejercicio 8
+**Configurar tu máquina virtual usando Vagrant con el provisionador Ansible.**
+
+Instalamos las dependencias necesarias:
+```
+sudo apt-get install ruby-dev
+```
+
+Instalamos el plugin de azure para vagrant(>=1.6): 
+
+```
+vagrant plugin install vagrant-azure
+```
+
+Instalamos Virtualbox:
+
+```
+sudo apt-get install virtualbox virtualbox-dkms
+```
+
+Una vez hecho esto creamos el playbook de ansible [playbookansible.yml](https://github.com/jesmorc/Workinout/blob/master/playbookansible.yml) que realizará:
+
+1) Actualizar el sistema
+2) Instalar herramientas necesarias
+3) Clonar el repositorio de Git
+4) Dar permisos necesarios
+5) Ejecutar la aplicación
 
 
+Creamos el archivo [Vagrantfile](https://github.com/jesmorc/Workinout/blob/master/Vagrantfile) que creará la máquina virtual en Azure.
+El último bloque del archivo hace uso del playbook de ansible.
+
+Añadimos las líneas de abajo en el archivo *~/ansible_hosts* y en */etc/ansible/hosts*.
+
+```
+[localhost]
+127.0.0.1
+ansible_connection=local
+```
+
+Exportamos la variable de entorno de Ansible para que se reconozca el host:
+
+```
+export ANSIBLE_HOSTS=~/ansible_hosts 
+```
+
+Ejecutamos:
+
+```
+vagrant box add azure https://github.com/msopentech/vagrant-azure/raw/master/dummy.box
+sudo vagrant up --provider=azure
+```
+
+La orden anterior crea la máquina, la configura y hace uso del playbook de ansible para desplegar la aplicación. 
+
+
+Si sólo queremos hacer el último paso (porque la máquina está ya creada) ejecutamos:
+
+```
+vagrant provider
+```
+
+![deloyed_azure_app](http://i.imgur.com/FM8ZcUH.png)
