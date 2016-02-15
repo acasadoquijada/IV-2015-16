@@ -66,21 +66,21 @@ Hugo Bárzano Cruz -
 [Computer-Management](https://github.com/hugobarzano/osl-computer-management) 10:45
 
 Samuel Carmona Soria -
-[Eat with Rango](https://github.com/Samuc/Eat-with-Rango) 11:30
+[Eat with Rango](https://github.com/Samuc/Eat-with-Rango) 11:00
 
 José Manuel Luque Burgos -
-[RSMapWeb](https://github.com/luqueburgosjm/RSMapWeb) 12:00
+[RSMapWeb](https://github.com/luqueburgosjm/RSMapWeb) 11:15
 
 Mariano Palomo Villafranca -
-[Hearcloud](https://github.com/mpvillafranca/hear-cloud) 12:15
+[Hearcloud](https://github.com/mpvillafranca/hear-cloud) 11:30
 
 Pedro Gázquez Navarrete - 
-[App Bares y Tapas Quesada](https://github.com/pedrogazquez/appBares) 12:30
+[App Bares y Tapas Quesada](https://github.com/pedrogazquez/appBares) 11:45
 Lorenzo Manuel Rosas Rodríguez - [Tiendas](https://github.com/lorenmanu/Tiendas)
 
-Javier Ruiz César - [Votaciones](https://github.com/javiexfiliana7/submodulo-javi) 13:00
+Javier Ruiz César - [Votaciones](https://github.com/javiexfiliana7/submodulo-javi) 12:00
 
-Jesús García Godoy - [Workinout](https://github.com/jesmorc/Workinout.git) 13.30
+Jesús García Godoy - [Workinout](https://github.com/jesmorc/Workinout.git) 12.15
 
 ## Lista de comprobación del proyecto
 
