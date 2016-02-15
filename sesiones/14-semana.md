@@ -14,14 +14,14 @@ Alejandro Casado Quijada -
 Jesús Prieto López -
 [ProyectoIVDAI Bares](https://github.com/JesGor/Proyecto-IV-DAI) 10:15
 
+Rafael Lachica Garrido -
+[PLUCO](https://github.com/rafaellg8/IV-PLUCO-RLG) 11:30
+
 Ignacio Romero Cabrerizo -
 [openGestion](https://github.com/nachobit/IV_PR_OpenOrder) 10:30
 
 Rubén Martín Hidalgo -
 [Pluco-DB](https://github.com/romilgildo/IV-PLUCO-RMH) 10:45
-
-Rafael Lachica Garrido -
-[PLUCO](https://github.com/rafaellg8/IV-PLUCO-RLG) 11:30
 
 Manuel Alejandro Barranco Bailón -
 [TusPachangas](https://github.com/mabarrbai/TusPachangas) 11:45
