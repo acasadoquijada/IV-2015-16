@@ -370,5 +370,12 @@
 - [x] Conocer los sistemas de gestión de la configuración, provisionamiento y monitorizació más usados hoy en día.
 
 
+##Seminarios y otros
 
+- [x] Visita a Trevenque
+- [x] Boots de Telegram
+- [ ] Charla sobre Microsoft Azure
+- [x] Hackaton sobre el Proyecto Final
+- [x] Asistencia continuada a clase teórica y practica 
+- [x] Participación activa en grupo IV Telegram
 

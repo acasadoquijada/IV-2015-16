@@ -88,6 +88,11 @@ Pedro Gázquez Navarrete -
 Lorenzo Manuel Rosas Rodríguez - [Tiendas](https://github.com/lorenmanu/Tiendas)
 
 Alberto Romero Cañadas - [Lista libros](https://github.com/sn1k/submodulo-alberto) 13:15
+
+Javier Ruiz César - [Votaciones](https://github.com/javiexfiliana7/submodulo-javi) 13:30
+
+Jesús García Godoy - [Workinout](https://github.com/jesmorc/Workinout.git) 13.45
+
 ## Lista de comprobación del proyecto
 
 Lo más importante es que recordéis que el proyecto es un proyecto, no la suma de sus partes. Es decir, un proyecto que tenga una infraestructura compleja y sustancial y que se pueda desplegar con una sola orden o ejecutando varias órdenes. Por eso, conviene que comprobéis.
