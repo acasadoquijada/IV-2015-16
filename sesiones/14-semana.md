@@ -53,45 +53,34 @@ Santiago de Diego de Diego -
 ## Día 15
 
 
-
-Antonio Miguel Pozo Cámara -
-[Bares](https://github.com/AntonioPozo/Bares) 10:15
-
 Jose Ignacio Recuerda Cambil -
-[Gestión de pedidos](https://github.com/ignaciorecuerda/gestionpedidos_django) 10:30
+[Gestión de pedidos](https://github.com/ignaciorecuerda/gestionpedidos_django) 10:00
 
 Jesús Ángel González Novez -
-[Try-2-Learn](https://github.com/jesusgn90/Try-2-Learn) 10:45
+[Try-2-Learn](https://github.com/jesusgn90/Try-2-Learn) 10:15
 
 Miguel Ángel García Villegas -
-[InsertaLogo](https://github.com/magvugr/InsertaLogo) 11:30
+[InsertaLogo](https://github.com/magvugr/InsertaLogo) 10:30
 
 Hugo Bárzano Cruz -
-[Computer-Management](https://github.com/hugobarzano/osl-computer-management) 11:45
-
-César Albusac Jorge -
-[App Bares y tapas](https://github.com/cesar2/DAI-BARES) 12:00
-
+[Computer-Management](https://github.com/hugobarzano/osl-computer-management) 10:45
 
 Samuel Carmona Soria -
-[Eat with Rango](https://github.com/Samuc/Eat-with-Rango) 12:15
-
+[Eat with Rango](https://github.com/Samuc/Eat-with-Rango) 11:30
 
 José Manuel Luque Burgos -
-[RSMapWeb](https://github.com/luqueburgosjm/RSMapWeb) 12:30
+[RSMapWeb](https://github.com/luqueburgosjm/RSMapWeb) 12:00
 
 Mariano Palomo Villafranca -
-[Hearcloud](https://github.com/mpvillafranca/hear-cloud) 12:45
+[Hearcloud](https://github.com/mpvillafranca/hear-cloud) 12:15
 
 Pedro Gázquez Navarrete - 
-[App Bares y Tapas Quesada](https://github.com/pedrogazquez/appBares) 13:00
+[App Bares y Tapas Quesada](https://github.com/pedrogazquez/appBares) 12:30
 Lorenzo Manuel Rosas Rodríguez - [Tiendas](https://github.com/lorenmanu/Tiendas)
 
-Alberto Romero Cañadas - [Lista libros](https://github.com/sn1k/submodulo-alberto) 13:15
+Javier Ruiz César - [Votaciones](https://github.com/javiexfiliana7/submodulo-javi) 13:00
 
-Javier Ruiz César - [Votaciones](https://github.com/javiexfiliana7/submodulo-javi) 13:30
-
-Jesús García Godoy - [Workinout](https://github.com/jesmorc/Workinout.git) 13.45
+Jesús García Godoy - [Workinout](https://github.com/jesmorc/Workinout.git) 13.30
 
 ## Lista de comprobación del proyecto
 
