@@ -4,21 +4,24 @@ Los proyectos se entregan el día 8 y se presentan el día 8 o el 15. Por favor,
 
 ## Día 8
 
+
+Santiago de Diego de Diego -
+[Landscapes](https://github.com/santidediego/Landscapes) 9:45
+
 Alejandro Casado Quijada -
 [Aplicación bares](https://github.com/acasadoquijada/IV) 10:00
 
 Jesús Prieto López -
 [ProyectoIVDAI Bares](https://github.com/JesGor/Proyecto-IV-DAI) 10:15
 
+Rafael Lachica Garrido -
+[PLUCO](https://github.com/rafaellg8/IV-PLUCO-RLG) 11:30
+
 Ignacio Romero Cabrerizo -
 [openGestion](https://github.com/nachobit/IV_PR_OpenOrder) 10:30
 
-
 Rubén Martín Hidalgo -
 [Pluco-DB](https://github.com/romilgildo/IV-PLUCO-RMH) 10:45
-
-Rafael Lachica Garrido -
-[PLUCO](https://github.com/rafaellg8/IV-PLUCO-RLG) 11:30
 
 Manuel Alejandro Barranco Bailón -
 [TusPachangas](https://github.com/mabarrbai/TusPachangas) 11:45
@@ -33,7 +36,7 @@ José Antonio González Cervera
 [SMS_Estadisticas](https://github.com/JA-Gonz/SMS_Estadisticas) 13:00
 
 Pablo Martín-Moreno Ruiz
-[Activento](https://github.com/pmmre/Activento-PabloMartin-MorenoRuiz) 13:15
+[Aplicación Bares](https://github.com/pmmre/Bares) 13:15
 
 Álvaro Pérez Luque [AppPoll](https://github.com/alvaro-gr/proyecto-IV) 13:30
 
@@ -44,40 +47,40 @@ Gabriel Stan - [GESTFG](https://github.com/gabriel-stan/gestion-tfg) 14:00
 Ángel Valera Motos -
 [Aplicación de DAI, bares y tapas](https://github.com/AngelValera/bares-y-tapas-DAI) 14:15
 
-
-## Día 15
-
 Santiago de Diego de Diego -
 [Landscapes](https://github.com/santidediego/Landscapes) 10:00
 
-Antonio Miguel Pozo Cámara -
-[Bares](https://github.com/AntonioPozo/Bares) 10:15
+## Día 15
+
 
 Jose Ignacio Recuerda Cambil -
-[Gestión de pedidos](https://github.com/ignaciorecuerda/gestionpedidos_django) 10:30
+[Gestión de pedidos](https://github.com/ignaciorecuerda/gestionpedidos_django) 10:00
 
 Jesús Ángel González Novez -
-[Try-2-Learn](https://github.com/jesusgn90/Try-2-Learn) 10:45
+[Try-2-Learn](https://github.com/jesusgn90/Try-2-Learn) 10:15
 
 Miguel Ángel García Villegas -
-[InsertaLogo](https://github.com/magvugr/InsertaLogo) 11:30
+[InsertaLogo](https://github.com/magvugr/InsertaLogo) 10:30
 
 Hugo Bárzano Cruz -
-[Computer-Management](https://github.com/hugobarzano/osl-computer-management) 11:45
-
-César Albusac Jorge -
-[App Bares y tapas](https://github.com/cesar2/DAI-BARES) 12:00
-
+[Computer-Management](https://github.com/hugobarzano/osl-computer-management) 10:45
 
 Samuel Carmona Soria -
-[Eat with Rango](https://github.com/Samuc/Eat-with-Rango) 12:15
-
+[Eat with Rango](https://github.com/Samuc/Eat-with-Rango) 11:00
 
 José Manuel Luque Burgos -
-[RSMapWeb](https://github.com/luqueburgosjm/RSMapWeb) 12:30
+[RSMapWeb](https://github.com/luqueburgosjm/RSMapWeb) 11:15
 
 Mariano Palomo Villafranca -
-[Hearcloud](https://github.com/mpvillafranca/hear-cloud) 12:45
+[Hearcloud](https://github.com/mpvillafranca/hear-cloud) 11:30
+
+Pedro Gázquez Navarrete - 
+[App Bares y Tapas Quesada](https://github.com/pedrogazquez/appBares) 11:45
+Lorenzo Manuel Rosas Rodríguez - [Tiendas](https://github.com/lorenmanu/Tiendas)
+
+Javier Ruiz César - [Votaciones](https://github.com/javiexfiliana7/submodulo-javi) 12:00
+
+Jesús García Godoy - [Workinout](https://github.com/jesmorc/Workinout.git) 12.15
 
 ## Lista de comprobación del proyecto
 

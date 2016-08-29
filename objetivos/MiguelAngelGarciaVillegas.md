@@ -29,7 +29,7 @@
 - [X] Aprender a instalar software libre en Linux.
 - [X] Entender el concepto de sistema de ficheros virtual usado en Linux para diferentes menesteres.
 - [] Usar git para hacer check-in en clase y expresar al final de cada sesión los objetivos alcanzados.
-- [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+- [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 - [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
 
@@ -208,9 +208,7 @@ Usar .gitignore para no añadir accidentalmente ficheros generados o innecesairo
 ## Otros objetivos
 
 - [x] 1. Entender cómo las diferentes tecnologías de virtualización se integran en la creación de contenedores.
-
 - [x] 2. Crear infraestructuras virtuales completas.
-
 - [x] 3. Comprender los pasos necesarios para la configuración automática de las mismas.
 
 ## Undécima semana, comienza el 9 de Diciembre
@@ -265,11 +263,8 @@ Usar .gitignore para no añadir accidentalmente ficheros generados o innecesairo
 ## Objetivos
 
 - [x] 1. Conocer las diferentes tecnologías y herramientas de virtualización tanto para procesamiento, comunicación y almacenamiento.
-
 - [x] 2. Diseñar, construir y analizar las prestaciones de un centro de proceso de datos virtual.
-
 - [x] 3. Documentar y mantener una plataforma virtual.
-
 - [x] 4. Realizar tareas de administración de infraestructuras virtuales.
 
 # Lista de comprobación del proyecto
@@ -285,3 +280,7 @@ Lo más importante es que recordéis que el proyecto es un proyecto, no la suma 
 - [x] 7. Que lo entregáis a tiempo. En esta práctica no se admite retraso.
 - [x] 8. Que habéis entregado los ejercicios en el porcentaje suficiente para que se corrija esta práctica.
 - [x] 9. Que tenéis todos los hitos anteriores aprobados.
+
+# Objetivos Asistencia
+
+- [x] Asistencia a Hackaton, participación activa, promoción y difusión en redes como twitter, facebook.

@@ -1,4 +1,4 @@
-# Ejercicios Tema 5
+# Ejercicios Tema 6
 
 ## Ejercicio 3
 ### Escribir en YAML la siguiente estructura de datos en JSON "{ uno: "dos", tres: [ 4, 5, "Seis", { siete: 8, nueve: [ 10, 11 ] } ] }".
@@ -298,4 +298,102 @@ Para efecutar los cambios ejecutamos:
 
 ```
 jose@tux2duo ⮀ ~ ⮀ vagrant provision
+```
+
+## Ejercicio 8
+### Configurar tu máquina virtual usando Vagrant con el provisionador Ansible.
+
+Aprovecho para realizar el último hito.
+
+Partimos de la base en la que tenemos instalado y configurado un servicio cloud en Azure, el cliente de azure así como el plugin para azure de vagrant.
+
+Definimos el Vagrantfile de la siguiente manera:
+
+```
+Vagrant.configure('2') do |config|
+
+  config.vm.define "localhost" do |l|
+    l.vm.hostname = "localhost"
+    l.vm.box = 'azure'
+    l.vm.network "public_network"
+    l.vm.network "private_network",ip: "192.168.56.10", virtualbox__intnet: "vboxnet0"
+    l.vm.network "forwarded_port", guest: 8000, host: 8000
+
+    l.vm.provider :azure do |azure, override|
+ 	azure.mgmt_certificate = File.expand_path('/home/jose/claves/azure.pem')
+ 	azure.mgmt_endpoint = 'https://management.core.windows.net'
+ 	azure.subscription_id = '5748f1ee-1ca8-4749-b2d3-739d2747f319'
+ 	azure.vm_image = 'b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu-14_04_3-LTS-amd64-server-20151218-en-us-30GB'
+ 	azure.vm_name = 'rsmap'
+  azure.cloud_service_name = 'rsmap'
+  azure.vm_user = 'jose'
+  azure.vm_password = 'jose'
+ 	azure.vm_location = 'Central US'
+ 	azure.ssh_port = '22'
+  azure.tcp_endpoints = '8000:8000'
+
+  config.ssh.username = 'jose'
+
+ 	end
+     l.vm.provision "ansible" do |ansible|
+    	ansible.sudo = true
+    	ansible.playbook = "rsmapdeploy.yml"
+    	ansible.verbose = "vvv"
+    	ansible.host_key_checking = false
+  	end
+ end
+end
+```
+
+El fichero indicado en Vagrantifle **rsmapdeploy.yml** es el playbook de Ansible, que contiene lo siguiente:
+
+```
+---
+- hosts: localhost
+  sudo: yes
+  remote_user: jose
+  tasks:
+  - name: Update sys
+    apt: update_cache=yes upgrade=dist
+  - name: Basic dependencies
+    action: apt pkg={{ item }} state=installed
+    with_items:
+      - python-setuptools
+      - python-dev
+      - python-pip
+      - build-essential
+      - git
+      - make
+  - name: Git clone
+    git: repo=https://github.com/luqueburgosjm/RSMapWeb.git dest=~/RSMapWeb clone=yes force=yes
+  - name: Permissions
+    command: chmod -R +x ~/RSMapWeb
+  - name: App requirements
+    pip: requirements=~/RSMapWeb/requirements.txt
+  - name : Stop production server if running
+    script: ~/RSMapWeb/scripts/stopifrunning.sh
+    ignore_errors: yes
+  - name: Run app
+    command: chdir=~/RSMapWeb nohup python manage.py runserver 0.0.0.0:8000
+
+```
+
+El archivo host de ansible debe quedar de la siguiente forma
+```
+[localhost]
+192.168.56.10	ansible_connection=local
+
+```
+
+Con la variable de entorno apuntándolo **export ANSIBLE_HOSTS=~/ansible_hosts**
+
+Por último si no tenemos la máquina creada ejecutamos
+
+```
+vagrant up --provider=azure
+```
+
+En caso de que sólo queramos actualizar el contenido usamos
+```
+vagrant provision
 ```

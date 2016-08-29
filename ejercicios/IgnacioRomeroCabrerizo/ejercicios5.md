@@ -99,6 +99,7 @@ Para apagar la máquina virtual:
 
 12. azure vm shutdown maquina-nacho-ubu
 
+---
 
 (*) En este punto se pedirá abrir un link web con un código e iniciar sesión en Azure:
 	
@@ -114,5 +115,29 @@ La correcta configuración sería de la siguiente forma:
 5. azure site create --location "West US" <nombre-web>
 ![img](https://github.com/nachobit/ETSIIT/blob/master/backup/IV1516/ejercicios/tema5/azure2.png)
 
+---
+
 Tras estos pasos tendremos lista la máquina:
 ![img](https://github.com/nachobit/ETSIIT/blob/master/backup/IV1516/ejercicios/tema5/azure3.png)
+
+
+###Ejercicio 7: Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.
+
+ - Crear espacio de almacenamiento:
+	
+		``` qemu-img create -f qcow2 lmint.qcow2 10G ```
+
+ - Instalar la imagen: 
+	
+		``` qemu-system-x86_64 -machine accel=kvm -hda lmint.qcow2 -cdrom linuxmint-17.3-cinnamon-64bit.iso -m 1G -boot d ```
+		
+	
+También se podría instalar de la siguiente forma:
+
+ - Clonar el repositorio:
+	
+		```git clone git://git.debian.org/git/pkg-escience/vmbuilder.git```
+		
+ - Ejecutar:
+	
+		```./debian-vm-builder kvm lenny --tmp=/var/tmp --mirror http://ftp.de.debian.org/debian --rootpass debian```

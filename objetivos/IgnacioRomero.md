@@ -210,3 +210,33 @@ recurso.
 
 - [x] Comprender los pasos necesarios para la configuración automática de las mismas.
 
+
+##Tema 5
+
+- [x] Conocer las diferentes tecnologías y herramientas de virtualización tanto para procesamiento, comunicación y almacenamiento.
+
+- [x] Diseñar, construir y analizar las prestaciones de un centro de proceso de datos virtual.
+
+- [x] Documentar y mantener una plataforma virtual.
+
+- [x] Realizar tareas de administración de infraestructuras virtuales.
+
+
+##Tema 6
+
+- [x] Diseñar, construir y analizar las prestaciones de un centro de proceso de datos virtual.
+
+- [x] Documentar y mantener una plataforma virtual.
+
+- [x] Realizar tareas de administración en infraestructura virtual.
+
+
+###Objetivos específicos
+
+- [x] Aprender lenguajes de configuración usados en infraestructuras virtuales.
+
+- [x] Saber cómo aplicarlos en un caso determinado.
+
+- [x] Conocer los sistemas de gestión de la configuración, provisionamiento y monitorizació más usados hoy en día.
+
+
